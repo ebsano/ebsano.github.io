@@ -6,10 +6,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/985fdf8988.js" crossorigin="anonymous"></script>
+  <!-- Iconify-->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/favicon.png" rel="icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
@@ -40,18 +43,19 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+            <span class="fas fa-laptop-code" style="font-size:30px; color:#3498db;"></span>
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><span class="fas fa-laptop-code" style="font-size:18px; color:#3498db;"></span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothscroll">Home</a></li>
             <li> <a href="#about" class="smoothscroll"> About</a></li>
-            <li> <a href="#services" class="smoothscroll"> Services</a></li>
-            <li> <a href="#team" class="smoothscroll"> Team</a></li>
-            <li> <a href="#portfolio" class="smoothscroll"> Portfolio</a></li>
-            <li> <a href="#blog" class="smoothscroll"> Blog</a></li>
+            <li> <a href="#experience" class="smoothscroll"> Experience</a></li>
+            <li> <a href="#skills" class="smoothscroll"> Skills</a></li>
+            <li> <a href="#portfolio" class="smoothscroll"> Projects</a></li>
+            <li> <a href="#publication" class="smoothscroll"> Publications</a></li>
+            <li> <a href="#volunteer" class="smoothscroll"> Volunteer</a></li>
             <li> <a href="#contact" class="smoothscroll"> Contact</a></li>
         </div>
         <!--/.nav-collapse -->
@@ -63,9 +67,13 @@
   <div id="home"></div>
   <div id="headerwrap" name="home">
     <header class="clearfix">
-      <h1><span class="icon icon-shield"></span></h1>
-      <p>A Bootstrap One Page Template</p>
-      <p>Exclusive for TemplateMag</p>
+      <h1>
+        <span class="fas fa-chart-bar"></span>
+        <span class="fas fa-bacteria"></span>
+        <span class="fas fa-chalkboard-teacher"></span>
+      </h1>
+      <p>Emiko Sano</p>
+      <p>Data Scientist | Microbial Geneticist | Educator</p>
     </header>
   </div>
   <!-- /headerwrap -->
@@ -74,23 +82,50 @@
   <div id="greywrap">
     <div class="row">
       <div class="col-lg-4 callout">
-        <span class="icon icon-stack"></span>
-        <h2>Bootstrap 3</h2>
-        <p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
+        <span class="fas fa-school"></span>
+        <h2>
+          <a href="https://github.com/ebsano/NYC_Schools">
+          <strong>School Environment and Student Performance</strong>
+        </a>
+        </h2>
+        <p>
+          I analyzed New York City School Survey results from 2018-2019 school year.
+          From a complex set of data that had a lot of collinearity,  
+          I discoved that students' perception on safety in and around school is important in predicting students performance in State Assessments.
+        </p>
       </div>
       <!-- col-lg-4 -->
 
       <div class="col-lg-4 callout">
-        <span class="icon icon-eye"></span>
-        <h2>Retina Ready</h2>
-        <p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
+        <span class="fas fa-fire"></span>
+        <span class="iconify" data-icon="ri:earthquake-fill" data-inline="false"></span>
+        <span class="fas fa-viruses"></span>
+        <h2>
+          <a href="https://github.com/ebsano/disasters_risk_assessment">
+            <strong>Combined Disaster Index</strong>
+          </a>
+          </h2>
+        <p>
+          As part of a team, we analyzed wildfire, earthquake, and COVID-19 data from 2020 in California. 
+          Using cluster analysis, we generated a combined risk index from all three disasters for each county.
+          We also generated maps to easily indetify areas of higher risks due to individual disaster or combined disasters. 
+        </p>
       </div>
       <!-- col-lg-4 -->
 
       <div class="col-lg-4 callout">
-        <span class="icon icon-heart"></span>
-        <h2>Crafted with Love</h2>
-        <p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love. </p>
+        <span class="iconify" data-icon="whh:onion" data-inline="false"></span>
+        <span class="iconify" data-icon="emojione-monotone:newspaper" data-inline="false"></span>
+        <h2>
+          <a href="https://github.com/ebsano/Subreddit_NLP">
+            <strong>Not That Kind of Onion</strong>
+          </a>
+        </h2>
+        <p>
+          Built a predictive model for subreddit classification. 
+          I collected data using text data through an API and used natural language procesing to remove unwanted text and trained models using meaningful content.
+          I achieved close to 90% accuracy distinguishing a general news feed and The Onion (satirical news media) feed.
+        </p>
       </div>
       <!-- col-lg-4 -->
     </div>
@@ -102,20 +137,22 @@
   <div class="container" id="about" name="about">
     <div class="row white">
       <br>
-      <h1 class="centered">A LITTLE ABOUT OUR AGENCY</h1>
+      <h1 class="centered">A LITTLE ABOUT ME</h1>
       <hr>
 
       <div class="col-lg-6">
-        <p>We believe ideas come from everyone, everywhere. In fact, at TemplateMag, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft.
-          These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what
-          we can to support the community we love.</p>
+        <p>I am a microbial geneticist and educator turned data scientist. I have grown my passion for better STEM education and accessibility, and I want people to experience the joy of science the way I did. My career as a lab researcher has been a rewarding endeavor driven by my curiosity, but being a mentor to students was even more rewarding. 
+          My purse in data science is driven by multiple factors. My adventurous spirit and constant thirst to learn started my journey. The process of data analysis and the potential to help many in need through data is immense. I want to bring my resourcefulness that I gain as a researcher and use data to bring science to people’s lives.
+          </p>
       </div>
       <!-- col-lg-6 -->
 
       <div class="col-lg-6">
-        <p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes
-          pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s
-          earnings back to the community each year.</p>
+        <p>
+          My projects vary in topic reflecing my wide interest and showcasing my ability to be versatile. 
+          I am constantly thinking on new projects to work on, so if you are intersted in collaborations or seeking any help in your data projects, please reach out to me. I am always willing to help. </br>
+          If you don't find me in front of my computer, I am either taking a walk, rock climbing, or fly fishing. 
+        </p>
       </div>
       <!-- col-lg-6 -->
     </div>
@@ -135,36 +172,76 @@
   <!-- section -->
 
 
-  <!-- ==== SERVICES ==== -->
-  <div class="container" id="services" name="services">
+  <!-- ==== EXPERIENCE ==== -->
+  <div class="container" id="experience" name="experience">
     <br>
     <br>
     <div class="row">
-      <h2 class="centered">ONE BRAND, ONE VOICE.</h2>
+      <h2 class="centered">EXPERIENCE</h2>
       <hr>
       <br>
       <div class="col-lg-offset-2 col-lg-8">
-        <p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t
-          credible aren’t viable.
+        <h3>
+          Data Science Immersive @ General Assembly
+        </h3>
+        <p>
+          I completed 480 hours of data science immersive in which I completed five projects in addition to 30+ projects and writing blogs.
+          I aquired various data science skills including Python, Pandas, NumPy, Scikit-Learn, NLP, Artifical Neural Networks as well data visualizations.
+          I demonstrated my proficiency in these skills as well statstical through these projects:
+          <li>
+            Regression modeling of student state assessment perfromance scores through NYC schools survey data.
+            I also generated a map to visualize the summary results.
+          </li>
+          <li>
+            (Collaborative project) Unsupervised modeling to generate disaster danger index due to a combination of COVID-19 cases, wildfires, and earthquakes in California.
+            We also generated various maps to visualized the risk factors per county level.
+          </li>
+          <li>
+            Classification modeling of subreddits based on texts.
+          </li>
+          <li>
+            Regression modeling of real estate prices in Ames, Iowa.
+          </li>
+          <li>
+            Statistical inference analysis of SAT/ACT participation data in order to make recommndataions to the College Board in order to increase ACT participation.
+          </li>
         </p>
-        <p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-        <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s
-          when the brand can truly flex its muscles.</p>
+        <br>
+        <h3>
+          Science Expert Reviewer @ Study.com
+        </h3>
+        <p>
+          <li>
+            Edit and fact-check various science topics for educational material.
+          </li>
+          <li>
+            Provide feedback and ecouragement to writers and bring the quality of the content up the company's standards.
+          </li>
+          <br>
+
+          <h3>
+            Postdoctoral Researcher @ The Universtiy of Montana
+          </h3>
+          <p>
+            <li>
+              Genome evolution research with focus on maintenance of genes in natural populations of bacteria.
+            </li>
+            <li>
+              Performed microbial evolution research (experimental design, data collection, and analysis) that resulted in publication in a prestigious peer-reviewed journal (Nature Ecology and Evolution).
+            </li>
+            <li>
+              Trained and mentored all lab personnel which ranged from high school students, summer interns, undergraduate students, and graduate students (master and Ph.D.). 
+              All of them are successful at pursuing their next career goals.
+            </li>
+            <li>
+              Collaborated with a lab at the University of Wisconsin, Madison for native protein purification.
+            </li>
+        </p>
       </div>
       <!-- col-lg -->
     </div>
-    <!-- row -->
 
-    <div class="row">
-      <h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
-      <hr>
-      <br>
-      <div class="col-lg-offset-2 col-lg-8">
-        <img class="img-responsive" src="img/iphone.png" alt="">
-      </div>
-      <!-- col -->
-    </div>
-    <!-- row -->
+    
   </div>
   <!-- container -->
 
@@ -180,55 +257,109 @@
   </section>
   <!-- section -->
 
-  <!-- ==== TEAM MEMBERS ==== -->
-  <div class="container" id="team" name="team">
+  <!-- ==== SKILLS ==== -->
+  <div class="container" id="skills" name="skills">
     <br>
     <div class="row white centered">
-      <h1 class="centered">MEET OUR AWESOME TEAM</h1>
+      <h1 class="centered">SKILLS</h1>
       <hr>
       <br>
+      <div class="col-lg-6">
+        <br>
+        <h4><b>Data Science</b></h4>
+        <ul class="fa-ul mb-0">
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Python
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Pandas
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Numpy
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Machine Learning
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Natural Language Processing (NLP)
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Data Visualization
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Spark
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              SQL
+            </span> 
+          </li>
+        </ul>
       <br>
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team01.jpg" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Mike Arney</b></h4>
-        <a href="#" class="icon icon-twitter"></a>
-        <a href="#" class="icon icon-facebook"></a>
-        <a href="#" class="icon icon-flickr"></a>
-        <p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+      <br>
       </div>
       <!-- col-lg-3 -->
 
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team02.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-6">
         <br>
-        <h4><b>Tim Davies</b></h4>
-        <a href="#" class="icon icon-twitter"></a>
-        <a href="#" class="icon icon-facebook"></a>
-        <a href="#" class="icon icon-flickr"></a>
-        <p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+        <h4 class="centered"><b>Biology</b></h4>
+        <ul class="fa-ul mb-0">
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Microbial Genetics
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              DNA/RNA isolation 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Cloning 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              PCR/qPCR 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Primer Design 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Library Prep for Next-Gen Sequencing (NGS) 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Galaxy 
+            </span> 
+          </li>
+          <li>
+            <span class="fas fa-arrow-circle-right">
+              Scientific Writing
+            </span> 
+          </li>
+        </ul>
       </div>
-      <!-- col-lg-3 -->
-
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team03.jpg" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Michele Lampa</b></h4>
-        <a href="#" class="icon icon-twitter"></a>
-        <a href="#" class="icon icon-facebook"></a>
-        <a href="#" class="icon icon-flickr"></a>
-        <p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
-      </div>
-      <!-- col-lg-3 -->
-
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="img/team/team04.jpg" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Jaye Smith</b></h4>
-        <a href="#" class="icon icon-twitter"></a>
-        <a href="#" class="icon icon-facebook"></a>
-        <a href="#" class="icon icon-flickr"></a>
-        <p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
       </div>
       <!-- col-lg-3 -->
 
@@ -237,32 +368,16 @@
   </div>
   <!-- container -->
 
-  <!-- ==== GREYWRAP ==== -->
-  <div id="greywrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 centered">
-          <img class="img-responsive" src="img/macbook.png" align="">
-        </div>
-        <div class="col-lg-4">
-          <h2>We Are Hiring!</h2>
-          <p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.</p>
-          <p><a class="btn btn-success">Contact Us</a></p>
-        </div>
-      </div>
-      <!-- row -->
-    </div>
-    <br>
-    <br>
-  </div>
-  <!-- greywrap -->
 
   <!-- ==== SECTION DIVIDER3 -->
   <section class="section-divider textdivider divider3">
     <div class="container">
-      <h1>DESIGN SOLVE PROBLEMS</h1>
+      <h1>SOLVE PROBLEMS</h1>
       <hr>
-      <p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
+      <p>
+        I love solving problems from a wide variety of topics. 
+        I enjoy the challenge of tackling data problems and communicate the results in easy to understand manner. 
+      </p>
     </div>
     <!-- container -->
   </section>
@@ -273,7 +388,7 @@
     <br>
     <div class="row">
       <br>
-      <h1 class="centered">WE CREATE COOL STUFF</h1>
+      <h1 class="centered">Data Science Projects</h1>
       <hr>
       <br>
       <br>
@@ -286,10 +401,10 @@
         <div class="col-md-4 ">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/NYC_Schools.jpg" alt="">
               <figcaption>
-                <h5>DASHBOARD</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                <h5>NYC School</h5>
+                <a data-toggle="modal" href="#schools" class="btn btn-primary btn-lg">Take a Look</a>
               </figcaption>
               <!-- /figcaption -->
             </figure>
@@ -303,17 +418,17 @@
         <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="schools" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Project Title</h4>
+                <h4 class="modal-title">NYC Schools Surveys and What We Can Learn from Them</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="img/portfolio/folio01.jpg" alt=""></p>
+                <p><img class="img-responsive" src="assets/portfolio/NYC_Schools.jpg" alt=""></p>
                 <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-                <p><b><a href="#">Visit Site</a></b></p>
+                <p><b><a href="https://github.com/ebsano/NYC_Schools">See Project Details Here</a></b></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -330,10 +445,10 @@
         <div class="col-md-4">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio02.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/folio02.jpg" alt="">
               <figcaption>
-                <h5>UI DESIGN</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                <h5>DISASTERS</h5>
+                <a data-toggle="modal" href="#disasters" class="btn btn-primary btn-lg">Take a Look</a>
               </figcaption>
               <!-- /figcaption -->
             </figure>
@@ -343,14 +458,39 @@
         </div>
         <!-- /col -->
 
+        <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+
+        <div class="modal fade" id="disasters" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Risk Assessment Based on Multiple Disasters in California</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/portfolio/NYC_Schools.jpg" alt=""></p>
+                <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                <p><b><a href="https://github.com/ebsano/disasters_risk_assessment">See Project Details Here</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
         <!-- PORTFOLIO IMAGE 3 -->
         <div class="col-md-4">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio03.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/subreddits.png" alt="">
               <figcaption>
-                <h5>ANDROID PAGE</h5>
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                <h5>Subreddit</h5>
+                <a data-toggle="modal" href="#reddit" class="btn btn-primary btn-lg">Take a Look</a>
               </figcaption>
               <!-- /figcaption -->
             </figure>
@@ -362,12 +502,37 @@
       </div>
       <!-- /row -->
 
+      <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+
+      <div class="modal fade" id="reddit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">The Onion vs News</h4>
+            </div>
+            <div class="modal-body">
+              <p><img class="img-responsive" src="assets/portfolio/subreddits.png" alt=""></p>
+              <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+              <p><b><a href="https://github.com/ebsano/Subreddit_NLP">See Project Details Here</a></b></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
       <!-- PORTFOLIO IMAGE 4 -->
       <div class="row">
         <div class="col-md-4 ">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio04.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/folio04.jpg" alt="">
               <figcaption>
                 <h5>PROFILE</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -384,7 +549,7 @@
         <div class="col-md-4">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio05.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/folio05.jpg" alt="">
               <figcaption>
                 <h5>TWITTER STATUS</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -401,7 +566,7 @@
         <div class="col-md-4">
           <div class="grid mask">
             <figure>
-              <img class="img-responsive" src="img/portfolio/folio06.jpg" alt="">
+              <img class="img-responsive" src="assets/portfolio/folio06.jpg" alt="">
               <figcaption>
                 <h5>PHONE MOCKUP</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -433,8 +598,8 @@
   </section>
   <!-- section -->
 
-  <!-- ==== BLOG ==== -->
-  <div class="container" id="blog" name="blog">
+  <!-- ==== PUBLICATIONS ==== -->
+  <div class="container" id="publication" name="publication">
     <br>
     <div class="row">
       <br>
@@ -446,14 +611,14 @@
     <!-- /row -->
 
     <div class="row">
-      <div class="col-lg-6 blog-bg">
+      <div class="col-lg-6 publication-bg">
         <div class="col-lg-4 centered">
           <br>
-          <p><img class="img img-circle" src="img/team/team04.jpg" width="60px" height="60px"></p>
+          <p><img class="img img-circle" src="assets/team/team04.jpg" width="60px" height="60px"></p>
           <h4>Jaye Smith</h4>
           <h5>Published Aug 30.</h5>
         </div>
-        <div class="col-lg-8 blog-content">
+        <div class="col-lg-8 publication-content">
           <h2>We Define Success</h2>
           <p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
           <p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
@@ -463,10 +628,10 @@
       </div>
       <!-- /col -->
 
-      <div class="col-lg-6 blog-bg">
+      <div class="col-lg-6 publication-bg">
         <div class="col-lg-4 centered">
           <br>
-          <p><img class="img img-circle" src="img/team/team03.jpg" width="60px" height="60px"></p>
+          <p><img class="img img-circle" src="assets/team/team03.jpg" width="60px" height="60px"></p>
           <h4>Michele Lampa</h4>
           <h5>Published Aug 28.</h5>
         </div>
@@ -490,11 +655,11 @@
   <!-- ==== SECTION DIVIDER6 ==== -->
   <section class="section-divider textdivider divider6">
     <div class="container">
-      <h1>CRAFTED IN NEW YORK, USA.</h1>
-      <hr>
-      <p>Some Address 987,</p>
-      <p>+34 9884 4893</p>
-      <p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+    </br>
+      <h1>Microbiology</h1>
+      <p></p>
+      <p></p>
+      <p></p>
     </div>
     <!-- container -->
   </section>
@@ -503,52 +668,35 @@
   <div class="container" id="contact" name="contact">
     <div class="row">
       <br>
-      <h1 class="centered">THANKS FOR VISITING US</h1>
+      <h1 class="centered">THANKS FOR VISITING MY PAGE</h1>
       <hr>
       <br>
       <br>
 
       <div class="col-lg-4">
-        <h3>About Us</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <h3>Newsletter</h3>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="inputEmail1" class="col-lg-4 control-label"></label>
-            <div class="col-lg-10">
-              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="text1" class="col-lg-4 control-label"></label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="text1" placeholder="Your Name">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-10">
-              <button type="submit" class="btn btn-success">Sign in</button>
-            </div>
-          </div>
-        </form>
+        <h3>Contacting Me</h3>
+        <p>
+          I'm available for discussing any of my work as well for collaboration or consultation for any data project you may have.
+        </p>
       </div>
       <!-- col -->
 
       <div class="col-lg-3">
         <h3>Contact Information</h3>
-        <p><span class="icon icon-home"></span> Some Address 987, NY<br/>
-          <span class="icon icon-phone"></span> +34 9884 4893 <br/>
-          <span class="icon icon-mobile"></span> +34 59855 9853 <br/>
-          <span class="icon icon-envelop"></span> <a href="#"> example@example.com</a> <br/>
-          <span class="icon icon-twitter"></span> <a href="#"> @TemplateMag </a> <br/>
-          <span class="icon icon-facebook"></span> <a href="#"> TemplateMag </a> <br/>
+        <p>
+          <span class="icon icon-mobile"></span> +1 530 329 4631 <br/>
+          <span class="icon icon-envelop"></span> <a href="#"> emiko.b.sano_at_gmail_dot_com</a> <br/>
+          <a class="fab fa-linkedin fa-3x" href="#https://www.linkedin.com/in/ebsano/"> </a>
+          <a class="fab fa-github-square fa-3x" href="#https://github.com/ebsano"> </a>
+          <a class="fab fa-medium fa-3x" href="#https://emiko-b-sano.medium.com"> </a>
+          <br/>
         </p>
       </div>
       <!-- col -->
 
       <div class="col-lg-5">
         <h3>Contact Form</h3>
-        <p>Register to our newsletter and be updated with the latests information.</p>
+        <p>You can also reach me using the contact form below.</p>
         <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
             <div class="form-group">
