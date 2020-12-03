@@ -384,11 +384,11 @@ a:before, a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-  background-image: url('../assets/bg/divider1.jpg')
+  background-image: url('../assets/bg/snow_mountain.JPG')
 }
 
 .divider2 {
-  background-image: url('../assets/bg/divider2.jpg')
+  background-image: url('../assets/bg/lab.jpg')
 }
 
 .divider3 {
@@ -401,7 +401,7 @@ a:before, a:after {
 }
 
 .divider6 {
-  background-image: url('../assets/bg/lab.jpg')
+  background-image: url('../assets/bg/glowing.JPG')
 }
 
 /* ==========================================================================
