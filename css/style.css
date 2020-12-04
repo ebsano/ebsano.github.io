@@ -384,7 +384,7 @@ a:before, a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-  background-image: url('../assets/bg/snow_mountain.JPG')
+  background-image: url('../assets/bg/rainbow.JPG')
 }
 
 .divider2 {
@@ -392,12 +392,12 @@ a:before, a:after {
 }
 
 .divider3 {
-  background-image: url('../assets/bg/divider3.jpg');
+  background-image: url('../assets/bg/covid_confirmed_capita.png');
   margin-top: 0px;
 }
 
 .divider4 {
-  background-image: url('../assets/bg/covid_confirmed_capita.png')
+  background-image: url('../assets/bg/snow_mountain.JPG')
 }
 
 .divider6 {
